@@ -1,3 +1,5 @@
 jupyter
 pdfplumber
 pandas
+openai
+elasticsearch
