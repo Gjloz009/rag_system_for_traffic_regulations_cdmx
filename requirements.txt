@@ -4,3 +4,4 @@ pandas
 openai
 elasticsearch
 sentence_transformers==2.7.0
+dash
