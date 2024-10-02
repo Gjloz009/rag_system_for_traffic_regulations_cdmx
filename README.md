@@ -2,7 +2,7 @@
 ### version 0.1
 
 <p align="center">
-  <img src="images\transito.jpg">
+  <img src="images\650_1200.jpg">
 </p>
 
 ---
@@ -83,14 +83,14 @@ For this version it is all constructed in python using python libraries.
   </p>
   
 ## 3. Data Architecture
-Alternative A
+Diagram of components and expected flow of the project:
 <p align="center">
-  <img src="images\diagram_v2.svg">
+  <img src="images\transit_diagram_architecture_v1.svg">
 </p>
 
-Alternative B
+Diagram of RAG llm architecture that is used in the project:
 <p align="center">
-  <img src="images\diagram_v3.svg">
+  <img src="images\data_cycle_diagram_v2.svg">
 </p>
 
 ## 4. Data description
