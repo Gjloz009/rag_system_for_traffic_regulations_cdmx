@@ -47,7 +47,10 @@ After installed Miniconda environment please install the requirements file.
 ### 2.1 Host machine technologies
 For this version it is all constructed in python using python libraries.
 - <p align="justify">
-  <b>Docker</b> : for creating the eleastic-search image.
+  <b>Docker</b> : for creating the web-app image.
+  </p>
+- <p align="justify">
+  <b>Docker-compose</b> : for creating the elastic-search engine and the interface web-app and link them.
   </p>
 
 - <p align="justify">
