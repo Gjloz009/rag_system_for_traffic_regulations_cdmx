@@ -15,7 +15,7 @@
 sudo apt install git
 ```
 ```
-git clone https://github.com/Gjloz009/mlops_proyect_jaf.git
+git clone https://github.com/Gjloz009/transit.git
 ```
 ---
 
