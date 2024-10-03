@@ -20,11 +20,11 @@ git clone https://github.com/Gjloz009/rag_system_for_traffic_regulations_cdmx
 ---
 
 <p align="justify">
-4. Install <code>Docker</code>. I'm using wsl2 I'll show how to install it for this particular case and also in a more general case.
+3. Install <code>Docker</code>. I'm using wsl2 I'll show how to install it for this particular case and also in a more general case.
 </p>
 
 <p align="justify">
-4.1 Typicall case 
+3.1 Typicall case in Linux OS.
 </p>
 
 Please update the libraries.
@@ -62,7 +62,7 @@ Please refer to the docker docs for faq or any doubt if I was not clear.
 > https://docs.docker.com/engine/install/linux-postinstall/
 
 <p align="justify">
-4.2 <code>WSL</code> case 
+3.2 <code>WSL</code> case 
 </p>
 
 If you are working with wsl you have to download the docker for windows package and install it, the docker desktop will connect with your distribution in wsl. You have to initalize docker desktop every time you want to use it .
