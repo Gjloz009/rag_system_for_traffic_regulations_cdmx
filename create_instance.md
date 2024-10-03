@@ -76,7 +76,3 @@ sudo usermod -aG docker $USER
 > https://docs.docker.com/desktop/install/windows-install/
 
 If you have problems using docker in your wsl environment please check the access settings on the docker desktop in enabled.
-
-<p align="center">
-  <img src="images\docker_desktop_1.png">
-</p>
