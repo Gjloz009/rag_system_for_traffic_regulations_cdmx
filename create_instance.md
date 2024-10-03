@@ -15,7 +15,7 @@
 sudo apt install git
 ```
 ```
-git clone https://github.com/Gjloz009/transit.git
+git clone https://github.com/Gjloz009/transito.git
 ```
 ---
 
