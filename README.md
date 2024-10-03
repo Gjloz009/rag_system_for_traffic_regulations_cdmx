@@ -27,6 +27,8 @@ I'm attacching the link to the traffic regulations document, the document is in 
 For setting up the VM Instance or Local Machine please install these tools:
 - Docker
 - docker-compose
+  
+If you want steps for installing those tools, please check [`here`](./create_instance.md).
 
 ### 2.1  Host machine technologies
 For this version it is all constructed in python using python libraries.
