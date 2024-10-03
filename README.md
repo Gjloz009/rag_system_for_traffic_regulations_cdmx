@@ -97,8 +97,6 @@ docker compose up --build
 After the conteiners are up please go to the following link to have the web-app ui.
 > http://localhost:5080/
 
-If you want steps for installing those tools, please check [`here`](./create_instance.md).
-
 You can check if the containers are up using 
 
 ```
@@ -106,7 +104,7 @@ docker ps
 ```
 
 <p align="center">
-  <img src="images\650_1200.jpg">
+  <img src="images\rag_prueba.png">
 </p>
 
 ## Future enhancements
