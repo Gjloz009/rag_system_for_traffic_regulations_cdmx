@@ -1,5 +1,8 @@
 # RAG system for CDMX Traffic Regulations
-### version 0.1
+### version 0.1.2
+---
+Patches for the new version:
+- implemented hybrid search.
 
 <p align="center">
   <img src="images\650_1200.jpg">
