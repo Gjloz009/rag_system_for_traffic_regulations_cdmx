@@ -2,25 +2,47 @@ from sentence_transformers import SentenceTransformer
 from elasticsearch import Elasticsearch
 from openai import OpenAI
 
-es_client = Elasticsearch('http://localhost:9200') 
+es_client = Elasticsearch('http://elasticsearch:9200') 
 model = SentenceTransformer("all-mpnet-base-v2")
 client = OpenAI()
 
 def elastic_search(query_string):
-    index_name = "course-questions"
+    index_name = "articulos-index"
 
     search_term = query_string
 
     vector_search_term = model.encode(search_term)
     
-    query = {
+    knn_query = {
         "field": "text_vector",
         "query_vector": vector_search_term,
         "k": 5,
-        "num_candidates": 10000, 
+        "num_candidates": 10000,
+        "boost":0.5
     }
 
-    response = es_client.search(index=index_name, knn=query,source = ['Artículo','Título'])
+    keyword_query = {
+        "bool": {
+            "must": {
+                "multi_match": {
+                    "query": query_string,
+                    "fields": ["Título", "Artículo"],
+                    "type": "best_fields",
+                    "boost": 0.5,
+                }
+            }
+        }
+    }
+
+
+    search_query = {
+        "knn": knn_query,
+        "query": keyword_query,
+        "size": 5,
+        "_source": ['Artículo','Título']
+    }
+
+    response = es_client.search(index=index_name, body = search_query)
     
     results_docs = []
 

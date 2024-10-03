@@ -4,7 +4,7 @@ import json
 from tqdm.auto import tqdm
 
 model = SentenceTransformer("all-mpnet-base-v2")
-es_client = Elasticsearch('http://localhost:9200')
+es_client = Elasticsearch('http://elasticsearch:9200')
 
 with open('documents-with-ids.json', 'rt') as f_in:
     docs_withids_raw = json.load(f_in)
@@ -35,7 +35,7 @@ index_settings = {
 }
 
 
-index_name = "course-questions"
+index_name = "articulos-index"
 
 es_client.indices.delete(index=index_name, ignore_unavailable=True)
 es_client.indices.create(index=index_name, body=index_settings)
