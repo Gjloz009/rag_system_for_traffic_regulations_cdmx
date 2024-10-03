@@ -15,7 +15,7 @@
 sudo apt install git
 ```
 ```
-git clone https://github.com/Gjloz009/transito.git
+git clone https://github.com/Gjloz009/rag_system_for_traffic_regulations_cdmx
 ```
 ---
 
