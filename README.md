@@ -25,8 +25,6 @@ I'm attacching the link to the traffic regulations document, the document is in 
 
 ## 2. Technologies
 For setting up the VM Instance or Local Machine please install these tools:
-
-- Miniconda environment (Python=3.11.9)
 - Docker
 - docker-compose
 
